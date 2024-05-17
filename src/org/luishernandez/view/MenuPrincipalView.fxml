@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luishernandez.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="1027.0" layoutX="-6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuPrincipal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="156.0" layoutX="802.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoKinalExpress.png" />
+         </image>
+      </ImageView>
+      <MenuBar fx:id="btnMenuBar" prefHeight="37.0" prefWidth="389.0" styleClass="menubar" stylesheets="@../resource/KinalExpressCSS.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem fx:id="btnMenuClientes" mnemonicParsing="false" onAction="#menuClientesView" text="Clientes" />
+                  <MenuItem fx:id="btnProveedores" mnemonicParsing="false" onAction="#ProveedorView" text="Proveedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#tipoProductoView" text="Tipo de Producto" />
+                  <MenuItem mnemonicParsing="false" onAction="#ProductosView" text="Producto" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Modulos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Compra y Venta " />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ReportesMenuBar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Programador" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/AcercaDe.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
